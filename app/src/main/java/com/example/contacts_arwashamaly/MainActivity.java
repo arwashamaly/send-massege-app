@@ -19,6 +19,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.contacts_arwashamaly.databinding.ActivityMainBinding;
+import com.google.android.gms.ads.AdRequest;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
@@ -31,12 +32,16 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        AdRequest adRequest = new AdRequest.Builder().build();
+        binding.adView.loadAd(adRequest);
+
         arl = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
             @Override
             public void onActivityResult(ActivityResult result) {
                 Intent intent = result.getData();
+                if (intent!=null){
                 binding.tvChooseName.setText(intent.getStringExtra("name"));
-                phone = intent.getStringExtra("phone");
+                phone = intent.getStringExtra("phone");}
             }
         });
 

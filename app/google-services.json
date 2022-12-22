@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "564345072825",
+    "project_id": "send-message-e07a9",
+    "storage_bucket": "send-message-e07a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564345072825:android:479cbb8929673e2a697f68",
+        "android_client_info": {
+          "package_name": "com.example.contacts_arwashamaly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564345072825-eigad8n353p609d6tqkdgtsbrptmkag5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQab37TYVRXJcktlU4tZCbiJxuz7JPOqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564345072825-eigad8n353p609d6tqkdgtsbrptmkag5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
